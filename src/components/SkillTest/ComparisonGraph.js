@@ -9,6 +9,7 @@ import {
 	Tooltip,
 	Legend,
 } from "chart.js";
+import annotationPlugin from "chartjs-plugin-annotation";
 
 import { Line } from "react-chartjs-2";
 ChartJS.register(
@@ -18,13 +19,18 @@ ChartJS.register(
 	LineElement,
 	Title,
 	Tooltip,
-	Legend
+	Legend,
+	annotationPlugin
 );
 
 const fakePercentile = [
 	8, 5, 73, 51, 92, 10, 49, 99, 41, 25, 20, 52, 69, 80, 98, 100,
 ];
 const ComparisonGraph = ({ data }) => {
+	const perLine = (data / 20) * 3;
+	const boxXMin = (((data / 20) * 3) % 2) * 2;
+	const boxMax = boxXMin + 3;
+	console.log(boxXMin, boxMax);
 	return (
 		<div className="comparisonGraph_container">
 			<div className="comparisonGraph_heading_container">
@@ -32,8 +38,10 @@ const ComparisonGraph = ({ data }) => {
 					<h3 className="primary_text">Comparison Graph</h3>
 					<p className="secondary_text">
 						<span>{`You scored ${data}% percentile`}</span>
-						&nbsp;which is lower than the average percentile 72% of
-						all the engineers who took this assessment
+						{` which is ${
+							data > 72 ? "greater" : "less"
+						} than the average percentile 72% of
+						all the engineers who took this assessment`}
 					</p>
 				</div>
 				<div className="icon">📈</div>
@@ -44,6 +52,26 @@ const ComparisonGraph = ({ data }) => {
 						plugins: {
 							legend: {
 								display: false,
+							},
+							annotation: {
+								annotations: {
+									line1: {
+										type: "line",
+										xMin: 11.5,
+										xMax: 11.5,
+										borderColor: "#FF9142",
+										borderWidth: 2,
+										borderDash: [6, 15],
+									},
+									line2: {
+										type: "line",
+										xMin: perLine,
+										xMax: perLine,
+										borderColor: "#438AF6",
+										borderWidth: 2,
+										borderDash: [6, 15],
+									},
+								},
 							},
 						},
 						tension: 0.4,

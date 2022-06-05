@@ -3,6 +3,7 @@
 	border-radius: 10px;
 	padding: 1.9rem;
 	margin-top: 1.5rem;
+	align-self: stretch;
 }
 .comparisonGraph_heading_container {
 	display: flex;
