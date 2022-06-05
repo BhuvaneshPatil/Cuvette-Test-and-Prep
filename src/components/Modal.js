@@ -21,6 +21,9 @@ const Modal = ({ show, handleClose, updateState, appState }) => {
 		handleClose();
 		updateState(formData);
 	};
+	useEffect(() => {
+		setCanSubmit(false);
+	}, []);
 	if (!show) {
 		return null;
 	}
