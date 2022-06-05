@@ -1,0 +1,39 @@
+.comparisonGraph_container {
+	border: 1px solid #ebf0f5;
+	border-radius: 10px;
+	padding: 1.9rem;
+	margin-top: 1.5rem;
+}
+.comparisonGraph_heading_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.heading_text_part {
+	width: 80%;
+}
+.comparisonGraph_heading_container h3 {
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 175%;
+}
+.comparisonGraph_heading_container p {
+	padding-top: 1rem;
+	font-size: 14px;
+}
+.comparisonGraph_heading_container span {
+	font-weight: 700;
+}
+.icon {
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	background-color: #f7f8fa;
+	border: 1px solid #ebf0f5;
+	line-height: 50px;
+	text-align: center;
+	font-size: 1.2rem;
+}
+.chart_container {
+	margin-top: 2rem;
+}

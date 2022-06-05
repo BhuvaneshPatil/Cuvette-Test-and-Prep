@@ -1,0 +1,44 @@
+.questionAnalysis_container {
+	border: 1px solid #ebf0f5;
+	border-radius: 10px;
+	padding: 1.9rem;
+	margin-top: 1.5rem;
+}
+.heading_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+.score {
+	color: #142683;
+	font-size: 1rem;
+}
+.questionAnalysis_header {
+	font-weight: 700;
+	font-size: 1rem;
+}
+.questionAnalysis_description {
+	text-align: justify;
+	line-height: 150%;
+	font-size: 14px;
+	margin-top: 0.8rem;
+}
+
+.questionChart_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 180px;
+	width: 180px;
+	margin: auto;
+	margin-top: 1rem;
+	position: relative;
+}
+.center_text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2rem;
+}

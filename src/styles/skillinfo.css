@@ -1,0 +1,28 @@
+.skillInfo_container {
+	display: flex;
+	align-items: center;
+	padding: 1.5rem;
+	margin-top: 1.5rem;
+	border: 1px solid #ebf0f5;
+	border-radius: 10px;
+}
+.skillInfo_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-self: stretch;
+	margin-left: 1rem;
+}
+.heading {
+	font-weight: 700px;
+	font-size: 1rem;
+}
+.subheading {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 180%;
+}
+.btn_part {
+	margin-left: auto;
+}

@@ -1,0 +1,14 @@
+.skilltest_container {
+	padding: 1.9rem;
+}
+.page_parts {
+	display: flex;
+}
+.content_left {
+	flex: 5;
+}
+.content_right {
+	flex: 2.5;
+	margin-left: 1.9rem;
+	margin-top: 1.5rem;
+}
