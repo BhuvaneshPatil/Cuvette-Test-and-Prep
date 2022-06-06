@@ -1,70 +1,71 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Cuvette - Test and Prep
 
-## Available Scripts
+This is simple webapp created using React js. Using figma designs provided.
 
-In the project directory, you can run:
+[Live Website](https://musical-puppy-04af07.netlify.app/)
+## Getting Started
 
-### `npm start`
+First, run the development server:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm start
+# or
+yarn start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+**Client:** React,
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Screenshots
 
-### `npm run eject`
+![App Screenshot](https://res.cloudinary.com/dnytn2j3p/image/upload/v1654501955/Cuvette%20Assignment/FireShot_Capture_022_-_Cuvette_Tech_-_musical-puppy-04af07.netlify.app_polzxs.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![App Screenshot](https://res.cloudinary.com/dnytn2j3p/image/upload/v1654501980/Cuvette%20Assignment/FireShot_Capture_024_-_Cuvette_Tech_-_musical-puppy-04af07.netlify.app_s9zils.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Charts
+- Dynamic/Editable Data
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Roadmap
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Add reponsiveness
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Improve comparison graph
 
-### Code Splitting
+- Make routes dynamic
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Refactoring code like creating reusable components
 
-### Analyzing the Bundle Size
+- Refactoring css (creating utility classes, make it more reusable)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## 🚀 About Me
+I'm a front-end developer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## 🛠 Skills
+Javascript, React, HTML, CSS...
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Lessons Learned
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I did spend significant time on improving styling of website and making sure it looks similar to provided designs. Pure CSS is used so the next task will be to make styles more reusable.
+For Example - 
+There are many instances where the following properties were used 
+```
+{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+```
+to improve we can crete a class which will have these properties and then apply it where we need.
